@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "4c564986-bd49-4b23-974a-93722720fae3",
+		"name": "Projeto Flask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Stores",
+			"item": [
+				{
+					"name": "Get Store",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/store/ec71099a59aa4fe6ac78926e746e4a32",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"store",
+								"ec71099a59aa4fe6ac78926e746e4a32"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Teste1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/store",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Stores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/store",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Store",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/store/fd16c4248b7b4590a72862fd9f3ca659",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"store",
+								"fd16c4248b7b4590a72862fd9f3ca659"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Items",
+			"item": [
+				{
+					"name": "Create Item",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"price\": 17.90,\n    \"store_id\": \"ec71099a59aa4fe6ac78926e746e4a32\",\n    \"name\": \"teste\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/item",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"item"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Item",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/item/fac8bb5c9f6b4bcc8027459416d56b42",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"item",
+								"fac8bb5c9f6b4bcc8027459416d56b42"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/item",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"item"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/item/3627e03dbd7a46019a460dd9536a19b7",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"item",
+								"3627e03dbd7a46019a460dd9536a19b7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Item",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Item Alterado\",\n    \"price\": 20.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/item/3627e03dbd7a46019a460dd9536a19b7",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"item",
+								"3627e03dbd7a46019a460dd9536a19b7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
