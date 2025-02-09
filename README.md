@@ -62,3 +62,23 @@ Change the last name for the service you want
 You need to have another compose with debug command and say to vscode connect remotely to the container on certain port
 
 `docker compose -f docker-compose.yaml -f docker-compose.debug.yaml up`
+
+
+# DB Commands
+
+Creates the folder
+
+`flask db init`
+
+Creates que migration file
+
+`flask db migrate`
+
+Does the migration
+
+`flask db upgrade`
+
+## Run command inside the migration file
+
+`op.execute("UPDATE invoices SET enable_downloads = False")`
+
